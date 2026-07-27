@@ -73,8 +73,10 @@
             }
 
             .gurus {
-                width: 550px;
-                height: fit-content;
+                display: flex;
+                flex-direction: row;
+                width: -webkit-fill-available;
+                overflow: scroll;
             }
 
             .guru-section {
@@ -84,8 +86,10 @@
 
         @media screen and (max-width: 320px) {
             .gurus {
-                width: 300px;
-                height: fit-content;
+                display: flex;
+                flex-direction: row;
+                width: -webkit-fill-available;
+                overflow: scroll;
             }
 
         }
