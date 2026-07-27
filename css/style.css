@@ -1,0 +1,495 @@
+a {
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: "Noricon";
+  src:
+    url("../fonts/Norican.otf") format("opentype"),
+    url("../fonts/Norican-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0rem 9rem;
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #ebebeb;
+  position: relative;
+  z-index: 10;
+}
+
+.header-top .logo {
+  font-family: "Mr De Haviland", cursive;
+  font-size: 3rem;
+  color: #000;
+  letter-spacing: normal;
+  font-weight: normal;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.logo {
+  font-family: "fangsong";
+  font-size: 2.5rem;
+  color: #000;
+  font-weight: normal;
+}
+
+.carousel-inner {
+  position: relative;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  top: 50%;
+  transform: translateY(-50%);
+  width: 60px;
+}
+
+@media (max-width: 768px) {
+  .header-top {
+    padding: 0px;
+    .container{
+      justify-content: space-between;
+    }
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    top: auto;
+    bottom: 10px;
+    transform: none;
+    width: auto;
+    position: fixed;
+  }
+
+  .carousel-control-prev {
+    left: 40%;
+  }
+
+  .carousel-control-next {
+    right: 40%;
+  }
+
+  .carousel-control-prev i,
+  .carousel-control-next i {
+    width: 40px !important;
+    height: 40px !important;
+    font-size: 1rem;
+  }
+}
+
+.carousel-control-prev i,
+.carousel-control-next i {
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-control-prev i:hover,
+.carousel-control-next i:hover {
+  background: rgba(0, 0, 0, 0.85);
+}
+
+.carousel-item {
+  height: 100vh;
+}
+
+.slider_img {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+.slider {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* SLIDES */
+.slide1 {
+  background-image: url("/images/slider1.jpeg");
+}
+
+.slide2 {
+  background-image: url("/images/slider2.jpeg");
+}
+
+.slide3 {
+  background-image: url("/images/slider3.jpeg");
+}
+
+.slide4 {
+  background-image: url("/images/slider4.jpeg");
+}
+
+/* MOBILE IMAGES */
+@media (max-width: 768px) {
+  .slide1 {
+    background-image: url("/images/slider1mob.jpeg");
+  }
+
+  .slide2 {
+    background-image: url("/images/slider2mob.jpeg");
+  }
+
+  .slide3 {
+    background-image: url("/images/slider3mob.jpeg");
+  }
+
+  .slide4 {
+    background-image: url("/images/slider4mob.jpeg");
+  }
+}
+
+.overlay-box {
+  position: absolute;
+  top: 45%;
+  left: 10%;
+  background: rgb(255 255 255 / 60%);
+  color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  min-width: 300px;
+  max-width: 500px;
+}
+
+.overlay-box p {
+  margin: 5px 0 0;
+  font-size: 2rem;
+  color: #80422c;
+  border-top: 2px solid #80422c;
+  padding-top: 5px;
+  font-family: "Mr De Haviland", cursive;
+  padding: 1rem;
+}
+
+.arrow-right {
+  margin-top: 10px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.arrow-right i {
+  font-size: 1.5rem;
+  color: #000;
+  border: 1px solid #000;
+  border-radius: 100%;
+  padding: 1rem;
+}
+
+.circle-wrapper {
+  position: absolute;
+  top: 10%;
+  left: 25%;
+  transform: translateX(-50%);
+  width: 200px;
+  height: 200px;
+}
+
+.rotating-text {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: spin 30s linear infinite;
+  z-index: 2;
+}
+
+.rotating-text span {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform-origin: 0 0px;
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+
+@keyframes spin {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+.circle-image {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px solid white;
+  z-index: 1;
+}
+
+.circle-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .overlay-box {
+    top: 60%;
+    left: 15px;
+    max-width: 60%;
+    min-width: 90%;
+  }
+
+  .overlay-box p {
+    font-size: 0.8rem;
+  }
+
+  .circle-wrapper {
+    top: 10%;
+    left: 73%;
+    transform: translateX(0%);
+    width: 150px;
+    height: 0;
+  }
+
+  .circle-image {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media (max-width: 380px) {
+  .circle-wrapper {
+    width: 15%;
+  }
+}
+
+/* Header - Navbar - Breadcrumb */
+.header-top {
+  background: #f8f9fa;
+  border-bottom: 1px solid #ebebeb;
+}
+
+.header-top .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+}
+
+.logo {
+  font-family: "Mr De Haviland", cursive;
+  font-size: 3rem;
+}
+
+.navbar-custom {
+  position: relative;
+  border-bottom: 1px solid #ebebeb;
+  background: #fff;
+}
+
+.navbar-custom .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-item {
+  position: static;
+  /* IMPORTANT */
+}
+
+.nav-item > a {
+  display: block;
+  margin: 5px 0;
+  color: #000;
+  text-decoration: none;
+  font-size: 13px;
+  transition: 0.3s;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.nav-item > a:hover {
+  color: #005c62;
+}
+
+.nav-item > a.active {
+  color: #005c62;
+  border-bottom: 4px solid #005c62;
+}
+
+.dropdown-card {
+  position: absolute;
+
+  left: 0;
+  top: 100%;
+
+  width: 100%;
+
+  background: #fff;
+  border-top: 1px solid #eee;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+
+  padding: 10px;
+
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+
+  z-index: 999;
+}
+
+.nav-item:hover .dropdown-card {
+  opacity: 1;
+  visibility: visible;
+}
+
+.dropdown-card h4 {
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.dropdown-card h6 {
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.dropdown-card a {
+  display: block;
+  color: #444;
+  text-decoration: none;
+  padding: 6px 0;
+  transition: 0.25s;
+}
+
+.dropdown-card a:hover {
+  color: #005c62;
+  padding-left: 8px;
+}
+
+.dropdown-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.line {
+  border-right: 1px solid #000;
+  min-height: 100%;
+  margin: 0px 5px;
+}
+
+/* Hide desktop menu */
+
+@media (max-width: 991px) {
+  .dropdown-card {
+    display: none !important;
+  }
+
+  .navbar {
+    display: none !important;
+  }
+}
+
+/* Mobile Menu */
+
+.offcanvas {
+  width: 320px;
+}
+
+.offcanvas-header {
+  border-bottom: 1px solid #eee;
+}
+
+.mobile-link {
+  display: block;
+
+  padding: 12px 5px;
+
+  color: #333;
+
+  text-decoration: none;
+
+  border-bottom: 1px solid #f3f3f3;
+
+  transition: 0.3s;
+}
+
+.mobile-link:hover {
+  background: #f5f5f5;
+
+  color: #005c62;
+
+  padding-left: 15px;
+}
+
+.accordion-button {
+  font-weight: 600;
+
+  background: #fff;
+}
+
+.accordion-button:not(.collapsed) {
+  background: #f8f9fa;
+
+  color: #005c62;
+
+  box-shadow: none;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+.submenu-link.active {
+  color: #005c62;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.submenu-section {
+  animation: fade 0.4s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+
+    transform: translateY(0);
+  }
+}
+
+.breadcrumb {
+  .breadcrumb-item {
+    a {
+      font-weight: 600;
+      text-decoration: none;
+      color: #000;
+    }
+  }
+}

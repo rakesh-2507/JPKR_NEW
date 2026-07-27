@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JPKR</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lavishly+Yours&family=Mr+De+Haviland&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/style.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .guru {
+            display: none;
+        }
+
+        .guru:first-of-type {
+            display: block;
+        }
+
+        .guru_desc.active img {
+            border: 3px solid #005c62;
+            border-radius: 6px;
+        }
+
+        .gurus {
+            overflow: scroll;
+            height: 72vh;
+            scrollbar-width: none;
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+        }
+
+        .guru-bio {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        @media screen and (max-width: 1024px) {
+            .gurus {
+                overflo-y: scroll;
+                scrollbar-width: none;
+                height: 80vh;
+                display: flex;
+            }
+
+            .guru-bio {
+                display: contents;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            body {
+                overflow-y: scroll;
+                scrollbar-width: none;
+            }
+
+            .gurus {
+                width: 550px;
+                height: fit-content;
+            }
+
+            .guru-section {
+                flex-direction: column;
+            }
+        }
+
+        @media screen and (max-width: 320px) {
+            .gurus {
+                width: 300px;
+                height: fit-content;
+            }
+
+        }
+    </style>
+</head>
+
+<body data-page="spiritual">
+    <div id="navbar"></div>
+    <div id="breadcrumb-container"></div>
+
+    <section class="container">
+        <div id="spiritual" class="submenu-section d-flex">
+            <div class="col-lg-10 py-5 px-2">
+                <h2>Spiritual</h2>
+                <p style="text-align: justify;">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam dolorem debitis expedita distinctio
+                    accusantium. Illo quos est reiciendis officiis rem vero quasi necessitatibus. Accusantium quae
+                    molestias
+                    odit ad delectus et?
+
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem tempora nisi iure error maiores
+                    fugiat officiis iusto ad, optio alias vel explicabo id iste, fugit atque nesciunt perferendis fuga
+                    velit!
+
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat repellendus est dignissimos omnis
+                    laboriosam minima sed, iure animi possimus esse itaque voluptatum quasi quidem perspiciatis eligendi
+                    aspernatur, incidunt eos quis.
+                </p>
+            </div>
+            <div class="col-lg-2" style="background-color: #f5f5f5;height: 80vh;">
+
+            </div>
+        </div>
+
+        <div id="association" class="submenu-section d-none d-flex">
+            <div class="col-lg-10 py-5 px-2">
+                <h2>Association with Spiritual Movements Institutions</h2>
+                <p style="text-align: justify;">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam dolorem debitis expedita distinctio
+                    accusantium. Illo quos est reiciendis officiis rem vero quasi necessitatibus. Accusantium quae
+                    molestias
+                    odit ad delectus et?
+
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem tempora nisi iure error maiores
+                    fugiat officiis iusto ad, optio alias vel explicabo id iste, fugit atque nesciunt perferendis fuga
+                    velit!
+
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat repellendus est dignissimos omnis
+                    laboriosam minima sed, iure animi possimus esse itaque voluptatum quasi quidem perspiciatis eligendi
+                    aspernatur, incidunt eos quis.
+                </p>
+            </div>
+            <div class="col-lg-2" style="background-color: #f5f5f5;height: 80vh;">
+
+            </div>
+        </div>
+
+        <div id="gurus" class="submenu-section d-none d-flex guru-section">
+            <div class="col-12 col-md-9">
+                <h2>My Gurus</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione nemo alias nihil aperiam?
+                    Voluptatibus,
+                    itaque esse sunt tenetur officiis quidem numquam architecto totam blanditiis in. Quasi optio error
+                    expedita
+                    voluptates?</p>
+                <div class="guru" id="guru1">
+
+                    <div class="guru-bio">
+                        <div class="gurucatlog col-12 col-md-8" style="text-align: center;">
+                            <img src="/images/gurus/Kanchi_Paramacharya.jpeg" alt="" width="60%">
+                            <h5>Kanchi Paramacharya</h5>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam ratione rerum quod nihil.
+                            Illum omnis,
+                            eos cum dolores ipsam error explicabo quaerat officiis sequi officia repudiandae, sunt animi
+                            non minima.
+                        </p>
+                    </div>
+                </div>
+                <div class="guru" id="guru2">
+                    <div class="guru-bio">
+                        <div class="gurucatlog col-12 col-md-8" style="text-align: center;">
+                            <img src="/images/gurus/Kurthalam_Swamy.jpeg" alt="" width="60%">
+                            <h5>Kurthalam Swamy</h5>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, maxime exercitationem.
+                            Nam
+                            dolorum perspiciatis quibusdam reprehenderit mollitia odio possimus? Minus sint odit sed
+                            maxime
+                            molestiae itaque nobis esse et similique.</p>
+                    </div>
+                </div>
+                <div class="guru" id="guru3">
+                    <div class="guru-bio">
+                        <div class="gurucatlog col-12 col-md-8" style="text-align: center;">
+                            <img src="/images/gurus/Brahmasri_Mudigonda_Venkatarama_Sastry.jpeg" alt="" width="60%">
+                            <h5>Brahmasri Mudigonda Venkatarama Sastry</h5>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, commodi ipsum eum incidunt
+                            culpa
+                            voluptas dolore iste magnam veritatis unde ea ex, rem illum inventore tenetur eius, fuga
+                            quod quasi.!
+                        </p>
+                    </div>
+                </div>
+                <div class="guru" id="guru4">
+                    <div class="guru-bio">
+                        <div class="gurucatlog col-12 col-md-8" style="text-align: center;">
+                            <img src="/images/gurus/Thadepally_Raghunarayana.jpeg" alt="" width="60%">
+                            <h5>Thadepally Raghunarayana</h5>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque error odio possimus rerum
+                            doloremque
+                            neque laudantium reprehenderit voluptas dolore iusto illum sunt, tenetur aspernatur,
+                            explicabo rem eius
+                            reiciendis ullam perspiciatis?</p>
+                    </div>
+                </div>
+                <div class="guru" id="guru5">
+                    <div class="guru-bio">
+                        <div class="gurucatlog col-12 col-md-8" style="text-align: center;">
+                            <img src="/images/gurus/Sri_Advaithananda.jpeg" alt="" width="60%">
+                            <h5>Sri Advaithananda</h5>
+                        </div>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, voluptates ad
+                            reprehenderit aut
+                            nemo, at nam debitis odio error ipsa officiis quasi nostrum! Suscipit quaerat aspernatur
+                            reprehenderit,
+                            necessitatibus corporis veniam?</p>
+                    </div>
+                </div>
+                <div class="guru" id="guru6">
+                    <div class="guru-bio">
+                        <div class="gurucatlog col-12 col-md-8" style="text-align: center;">
+                            <img src="/images/gurus/Viswanatha_Sathyanarayana .jpeg" alt="" width="60%">
+                            <h5>Viswanatha Sathyanarayana</h5>
+                        </div>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque tempora, tempore, asperiores
+                            illo nam
+                            rem, repellat quo odit libero porro nihil. Quisquam animi veniam maxime asperiores, corporis
+                            ratione id
+                            eum.</p>
+                    </div>
+                </div>
+                <div class="guru" id="guru7">
+                    <div class="guru-bio">
+                        <div class="gurucatlog col-12 col-md-8" style="text-align: center;">
+                            <img src="/images/gurus/Sri_Divakarla_Venkat_Avadhani.jpeg" alt="" width="60%">
+                            <h5>Sri Divakarla Venkat Avadhani</h5>
+                        </div>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim doloremque aliquid error
+                            praesentium
+                            quod esse dolorem autem officiis accusamus distinctio dolores commodi recusandae,
+                            consequuntur ducimus
+                            ex possimus dicta laborum similique.</p>
+                    </div>
+                </div>
+                <div class="guru" id="guru8">
+                    <div class="guru-bio">
+                        <div class="gurucatlog col-12 col-md-8" style="text-align: center;">
+                            <img src="/images/gurus/Jagannatha_Sastri.jpeg" alt="" width="60%">
+                            <h5>Jagannatha Sastri</h5>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, impedit totam, voluptas
+                            soluta minus
+                            nemo, ut illo rem repudiandae provident quod libero facilis alias sequi nihil odio sed iste
+                            eum.</p>
+                    </div>
+                </div>
+                <div class="guru" id="guru9">
+                    <div class="guru-bio">
+                        <div class="gurucatlog col-12 col-md-8" style="text-align: center;">
+                            <img src="/images/gurus/Sri_Krishna_Dongre_Sastri.jpeg" alt="" width="60%">
+                            <h5>Sri Krishna Dongre Sastri</h5>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia impedit facere
+                            exercitationem ipsum
+                            temporibus quod, nihil officiis, ea voluptatem delectus iure sit quaerat commodi porro saepe
+                            culpa
+                            provident incidunt voluptatibus.</p>
+                    </div>
+                </div>
+                <div class="guru" id="guru10">
+                    <div class="guru-bio">
+                        <div class="gurucatlog col-12 col-md-8" style="text-align: center;">
+                            <img src="/images/gurus/Somanchi_Sriramulu.jpeg" alt="" width="60%">
+                            <h5>Somanchi Sriramulu</h5>
+                        </div>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos ratione rem sunt consequatur
+                            dolores
+                            pariatur voluptas alias, distinctio nobis nemo vitae at illo itaque magni unde voluptates
+                            consequuntur
+                            molestiae facere.</p>
+                    </div>
+                </div>
+                <div class="guru" id="guru11">
+                    <div class="guru-bio">
+                        <div class="gurucatlog col-12 col-md-8" style="text-align: center;">
+                            <img src="/images/gurus/Rama_Murthy_Renu.jpeg" alt="" width="60%">
+                            <h5>Rama Murthy Renu</h5>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti alias magnam repellendus
+                            voluptate
+                            aspernatur, pariatur quisquam a consequatur culpa maiores veniam cumque labore temporibus!
+                            Provident
+                            odit architecto dignissimos officiis maxime!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-3 p-2" style="background-color: #f8f9fa;text-align: center;">
+                <h3 style="font-size:1.6rem; font-weight:600; color:#005c62; margin-bottom:1rem;">My Gurus</h3>
+                <div class="gurus">
+                    <a href="#" class="guru_desc active w-40 p-1" data-target="guru1"><img
+                            src="/images/gurus/Kanchi_Paramacharya.jpeg" class="guruimg" width="100" alt="GURU's"></a>
+                    <a href="#" class="guru_desc w-40 p-1" data-target="guru2"><img
+                            src="/images/gurus/Kurthalam_Swamy.jpeg" class="guruimg" width="100" alt="GURU's"></a>
+                    <a href="#" class="guru_desc w-40 p-1" data-target="guru3"><img
+                            src="/images/gurus/Brahmasri_Mudigonda_Venkatarama_Sastry.jpeg" class="guruimg" width="100"
+                            alt="GURU's"></a>
+                    <a href="#" class="guru_desc w-40 p-1" data-target="guru4"><img
+                            src="/images/gurus/Thadepally_Raghunarayana.jpeg" class="guruimg" width="100"
+                            alt="GURU's"></a>
+                    <a href="#" class="guru_desc w-40 p-1" data-target="guru5"><img
+                            src="/images/gurus/Sri_Advaithananda.jpeg" class="guruimg" width="100" alt="GURU's"></a>
+                    <a href="#" class="guru_desc w-40 p-1" data-target="guru6"><img
+                            src="/images/gurus/Viswanatha_Sathyanarayana .jpeg" class="guruimg" width="100"
+                            alt="GURU's"></a>
+                    <a href="#" class="guru_desc w-40 p-1" data-target="guru7"><img
+                            src="/images/gurus/Sri_Divakarla_Venkat_Avadhani.jpeg" class="guruimg" width="100"
+                            alt="GURU's"></a>
+                    <a href="#" class="guru_desc w-40 p-1" data-target="guru8"><img
+                            src="/images/gurus/Jagannatha_Sastri.jpeg" class="guruimg" width="100" alt="GURU's"></a>
+                    <a href="#" class="guru_desc w-40 p-1" data-target="guru9"><img
+                            src="/images/gurus/Sri_Krishna_Dongre_Sastri.jpeg" class="guruimg" width="100"
+                            alt="GURU's"></a>
+                    <a href="#" class="guru_desc w-40 p-1" data-target="guru10"><img
+                            src="/images/gurus/Somanchi_Sriramulu.jpeg" class="guruimg" width="100" alt="GURU's"></a>
+                    <a href="#" class="guru_desc w-40 p-1" data-target="guru11"><img
+                            src="/images/gurus/Rama_Murthy_Renu.jpeg" class="guruimg" width="100" alt="GURU's"></a>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="talks" class="submenu-section d-none d-flex">
+            <div class="col-lg-10 py-5 px-2">
+                <h2>Talks, Discourses & Spiritual Writings</h2>
+                <p style="text-align: justify;">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam dolorem debitis expedita distinctio
+                    accusantium. Illo quos est reiciendis officiis rem vero quasi necessitatibus. Accusantium quae
+                    molestias
+                    odit ad delectus et?
+
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem tempora nisi iure error maiores
+                    fugiat officiis iusto ad, optio alias vel explicabo id iste, fugit atque nesciunt perferendis fuga
+                    velit!
+
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat repellendus est dignissimos omnis
+                    laboriosam minima sed, iure animi possimus esse itaque voluptatum quasi quidem perspiciatis eligendi
+                    aspernatur, incidunt eos quis.
+                </p>
+            </div>
+            <div class="col-lg-2" style="background-color: #f5f5f5;height: 80vh;">
+
+            </div>
+        </div>
+
+        <div id="guidance" class="submenu-section d-none d-flex">
+            <div class="col-lg-10 py-5 px-2">
+                <h2>Guidance & Facilitation for Seekers</h2>
+                <p style="text-align: justify;">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam dolorem debitis expedita distinctio
+                    accusantium. Illo quos est reiciendis officiis rem vero quasi necessitatibus. Accusantium quae
+                    molestias
+                    odit ad delectus et?
+
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem tempora nisi iure error maiores
+                    fugiat officiis iusto ad, optio alias vel explicabo id iste, fugit atque nesciunt perferendis fuga
+                    velit!
+
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat repellendus est dignissimos omnis
+                    laboriosam minima sed, iure animi possimus esse itaque voluptatum quasi quidem perspiciatis eligendi
+                    aspernatur, incidunt eos quis.
+                </p>
+            </div>
+            <div class="col-lg-2" style="background-color: #f5f5f5;height: 80vh;">
+
+            </div>
+        </div>
+
+        <div id="integration" class="submenu-section d-none d-flex">
+            <div class="col-lg-10 py-5 px-2">
+                <h2>Integration of Spirituality in Social Upliftment</h2>
+                <p style="text-align: justify;">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam dolorem debitis expedita distinctio
+                    accusantium. Illo quos est reiciendis officiis rem vero quasi necessitatibus. Accusantium quae
+                    molestias
+                    odit ad delectus et?
+
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem tempora nisi iure error maiores
+                    fugiat officiis iusto ad, optio alias vel explicabo id iste, fugit atque nesciunt perferendis fuga
+                    velit!
+
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat repellendus est dignissimos omnis
+                    laboriosam minima sed, iure animi possimus esse itaque voluptatum quasi quidem perspiciatis eligendi
+                    aspernatur, incidunt eos quis.
+                </p>
+            </div>
+            <div class="col-lg-2" style="background-color: #f5f5f5;height: 80vh;">
+
+            </div>
+        </div>
+    </section>
+
+
+    <div id="footer"></div>
+    <script src="js/include.js"></script>
+    <script src="js/breadcrumb.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+
+            const guruLinks = document.querySelectorAll(".guru_desc");
+            const guruContents = document.querySelectorAll(".guru");
+
+            guruLinks.forEach(link => {
+
+                link.addEventListener("click", function (e) {
+                    e.preventDefault();
+
+                    // Remove active class
+                    guruLinks.forEach(item => item.classList.remove("active"));
+
+                    // Add active class
+                    this.classList.add("active");
+
+                    // Hide all guru contents
+                    guruContents.forEach(content => {
+                        content.style.display = "none";
+                    });
+
+                    // Show selected guru content
+                    const target = this.dataset.target;
+                    const selectedGuru = document.getElementById(target);
+
+                    if (selectedGuru) {
+                        selectedGuru.style.display = "block";
+                    }
+                });
+
+            });
+
+        });
+    </script>
+
+
+</body>
+
+</html>
