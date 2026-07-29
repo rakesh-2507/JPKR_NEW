@@ -13,6 +13,7 @@ a {
 
 p {
   text-align: justify;
+  font-size: 15px;
 }
 
 .header-top {
@@ -374,6 +375,7 @@ p {
 .dropdown-card h6 {
   font-weight: 600;
   margin-bottom: 15px;
+  font-size: 16px;
 }
 
 .dropdown-card a {
@@ -382,6 +384,7 @@ p {
   text-decoration: none;
   padding: 6px 0;
   transition: 0.25s;
+  font-size: 15px;
 }
 
 .dropdown-card a:hover {
@@ -473,6 +476,7 @@ p {
 .submenu-section {
   animation: fade 0.4s;
   gap: 2rem;
+  justify-content: center;
 }
 
 @keyframes fade {
