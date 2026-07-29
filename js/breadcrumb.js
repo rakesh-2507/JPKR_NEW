@@ -55,13 +55,6 @@ function createBreadcrumb() {
     lawer: {
       title: "As A Lawer",
       crumbs: ["Home", "As A Lawer"],
-
-      sections: {
-        advisory: {
-          title: "Advisory Roles",
-          crumbs: ["Home", "As A Lawer", "Advisory Roles"],
-        },
-      },
     },
 
     judicial: {
@@ -282,7 +275,6 @@ function createBreadcrumb() {
     Marriage: "family.html#marriage",
 
     "As A Lawer": "lawer.html",
-    "Advisory Roles": "lawer.html#advisory",
 
     "Judicial Career": "judicial.html",
     "Service Tenure & Key Positions": "judicial.html#service",

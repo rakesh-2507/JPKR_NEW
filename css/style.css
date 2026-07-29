@@ -11,6 +11,10 @@ a {
   font-style: normal;
 }
 
+p {
+  text-align: justify;
+}
+
 .header-top {
   display: flex;
   justify-content: space-between;
@@ -54,7 +58,7 @@ a {
 @media (max-width: 768px) {
   .header-top {
     padding: 0px;
-    .container{
+    .container {
       justify-content: space-between;
     }
   }
@@ -468,6 +472,7 @@ a {
 
 .submenu-section {
   animation: fade 0.4s;
+  gap: 2rem;
 }
 
 @keyframes fade {
