@@ -181,18 +181,6 @@ function createBreadcrumb() {
       },
     },
 
-    author: {
-      title: "Author",
-      crumbs: ["Home", "Author"],
-
-      sections: {
-        title: {
-          title: "Title",
-          crumbs: ["Home", "Author", "Title"],
-        },
-      },
-    },
-
     gallery: {
       title: "Gallery",
       crumbs: ["Home", "Gallery"],
@@ -228,6 +216,11 @@ function createBreadcrumb() {
         telugu: {
           title: "Telugu",
           crumbs: ["Home", "Articles", "Telugu Articles"],
+        },
+
+        books: {
+          title: "Books",
+          crumbs: ["Home", "Articles", "Books"],
         },
       },
     },
@@ -314,9 +307,6 @@ function createBreadcrumb() {
     "Integration of Spirituality in Social Upliftment":
       "/spiritual.html#integration",
 
-    Author: "/author.html",
-    Title: "/author.html#title",
-
     Gallery: "/gallery.html",
     Photographs: "/gallery.html#photographs",
     Videos: "/gallery.html#videos",
@@ -325,6 +315,7 @@ function createBreadcrumb() {
     Articles: "/articles.html",
     English: "/articles.html#english",
     Telugu: "/articles.html#telugu",
+    Books: "/articles.html#books",
 
     "Contact Info": "/contact.html",
     "Professional Contact Info": "/contact.html#professional",
