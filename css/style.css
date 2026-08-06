@@ -479,6 +479,12 @@ p {
   justify-content: center;
 }
 
+.content-container {
+  height: 80vh;
+  overflow: scroll;
+  scrollbar-width: none;
+}
+
 @keyframes fade {
   from {
     opacity: 0;
